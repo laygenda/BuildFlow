@@ -1,4 +1,4 @@
-{{-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -58,15 +58,11 @@
       </div>
     </div>
 </body>
-</html> --}}
+</html> 
 
 
 
-
-
-
-
-{{-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <title>Login - BuildFlow</title>
@@ -92,7 +88,7 @@
         </div>
     </div>
 </body>
-</html> --}}
+</html>
 
 
 
