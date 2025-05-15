@@ -12,9 +12,14 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('contractors', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
-        });
+    $table->id();
+    $table->foreignId('user_id')->constrained()->onDelete('cascade');
+    $table->string('company_name');
+    $table->text('description')->nullable();
+    $table->string('legal_docs')->nullable(); // path dokumen
+    $table->float('rating_avg')->default(0);
+    $table->timestamps();
+}); 
     }
 
     /**

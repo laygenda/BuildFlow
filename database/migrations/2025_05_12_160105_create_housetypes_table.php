@@ -11,10 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('housetypes', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
-        });
+        Schema::create('house_types', function (Blueprint $table) {
+    $table->id();
+    $table->string('name'); // contoh: Tipe 36
+    $table->integer('size')->nullable(); // luas m2 (opsional)
+    $table->text('description')->nullable();
+    $table->timestamps();
+});
+
     }
 
     /**

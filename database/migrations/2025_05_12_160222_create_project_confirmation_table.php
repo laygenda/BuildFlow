@@ -11,10 +11,15 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('project_confirmation', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
-        });
+        Schema::create('project_confirmations', function (Blueprint $table) {
+    $table->id();
+    $table->foreignId('project_id')->constrained()->onDelete('cascade');
+    $table->boolean('user_approved')->default(false);
+    $table->boolean('contractor_approved')->default(false);
+    $table->timestamp('confirmed_at')->nullable();
+    $table->timestamps();
+});
+
     }
 
     /**

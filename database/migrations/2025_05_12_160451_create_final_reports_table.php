@@ -12,9 +12,16 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('final_reports', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
-        });
+    $table->id();
+    $table->foreignId('project_id')->constrained()->onDelete('cascade');
+    $table->text('description');
+    $table->string('photo')->nullable();
+    $table->enum('stage', ['50', '100']); // tahap ke-1 atau selesai
+    $table->integer('total_expense')->default(0);
+    $table->timestamp('submitted_at')->nullable();
+    $table->timestamps();
+});
+
     }
 
     /**

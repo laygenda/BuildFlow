@@ -11,10 +11,18 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('payment', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
-        });
+        Schema::create('payments', function (Blueprint $table) {
+    $table->id();
+    $table->foreignId('project_id')->constrained()->onDelete('cascade');
+    $table->integer('amount');
+    $table->enum('type', ['dp', 'pelunasan']);
+    $table->string('method')->nullable(); // transfer, gateway, dll
+    $table->string('proof')->nullable();  // bukti transfer
+    $table->enum('status', ['pending', 'confirmed', 'rejected'])->default('pending');
+    $table->timestamp('paid_at')->nullable();
+    $table->timestamps();
+});
+
     }
 
     /**

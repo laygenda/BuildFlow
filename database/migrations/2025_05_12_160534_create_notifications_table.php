@@ -12,9 +12,14 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('notifications', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
-        });
+    $table->id();
+    $table->foreignId('user_id')->constrained()->onDelete('cascade');
+    $table->text('message');
+    $table->string('type')->nullable(); // proyek, pembayaran, dll
+    $table->boolean('is_read')->default(false);
+    $table->timestamps();
+});
+
     }
 
     /**

@@ -11,10 +11,16 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('riviews', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
-        });
+        Schema::create('reviews', function (Blueprint $table) {
+    $table->id();
+    $table->foreignId('project_id')->constrained()->onDelete('cascade');
+    $table->foreignId('user_id')->constrained()->onDelete('cascade');
+    $table->foreignId('contractor_id')->constrained()->onDelete('cascade');
+    $table->integer('rating'); // 1 - 5
+    $table->text('comment')->nullable();
+    $table->timestamps();
+});
+
     }
 
     /**
