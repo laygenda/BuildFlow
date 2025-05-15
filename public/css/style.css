@@ -1,0 +1,563 @@
+
+.login-page {
+  background-color: #69381d;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.login-page .overlap-wrapper {
+  background-color: #69381d;
+  overflow: hidden;
+  width: 1440px;
+  height: 1024px;
+}
+
+.login-page .overlap {
+  position: relative;
+  width: 1792px;
+  height: 1244px;
+  top: -14px;
+  left: -155px;
+}
+
+.login-page .BG {
+  position: absolute;
+  width: 1792px;
+  height: 1244px;
+  top: 0;
+  left: 0;
+}
+
+.login-page .overlap-group {
+  position: absolute;
+  width: 724px;
+  height: 724px;
+  top: 520px;
+  left: 0;
+  background-color: #ffa16d;
+  border-radius: 362px;
+}
+
+.login-page .ellipse {
+  position: absolute;
+  width: 572px;
+  height: 572px;
+  top: 76px;
+  left: 76px;
+  background-color: #daab91;
+  border-radius: 286px;
+}
+
+.login-page .div {
+  position: absolute;
+  width: 438px;
+  height: 438px;
+  top: 143px;
+  left: 143px;
+  background-color: #ddc7bb;
+  border-radius: 219px;
+}
+
+.login-page .vector {
+  position: absolute;
+  width: 668px;
+  height: 708px;
+  top: 14px;
+  left: 928px;
+}
+
+.login-page .username {
+  position: absolute;
+  width: 394px;
+  height: 59px;
+  top: 435px;
+  left: 663px;
+}
+
+.login-page .overlap-2 {
+  position: relative;
+  width: 392px;
+  height: 59px;
+  border-radius: 4px;
+  border: 1px solid;
+  border-color: #ffffff;
+}
+
+.login-page .email {
+  position: absolute;
+  width: 70px;
+  top: 19px;
+  left: 83px;
+  font-family: "Montserrat-Light", Helvetica;
+  font-weight: 300;
+  color: #ffffff;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 20px;
+  text-decoration: underline;
+}
+
+.login-page .user {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  top: 16px;
+  left: 15px;
+}
+
+.login-page .password {
+  position: absolute;
+  width: 394px;
+  height: 59px;
+  top: 520px;
+  left: 663px;
+}
+
+.login-page .text-wrapper {
+  position: absolute;
+  width: 124px;
+  top: 16px;
+  left: 83px;
+  font-family: "Montserrat-Light", Helvetica;
+  font-weight: 300;
+  color: #ffffff;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 20px;
+  text-decoration: underline;
+}
+
+.login-page .lock {
+  position: absolute;
+  width: 29px;
+  height: 37px;
+  top: 9px;
+  left: 13px;
+}
+
+.login-page .login-btn {
+  all: unset;
+  box-sizing: border-box;
+  position: absolute;
+  width: 394px;
+  height: 59px;
+  top: 620px;
+  left: 663px;
+}
+
+.login-page .login-wrapper {
+  position: relative;
+  width: 392px;
+  height: 59px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px #0000004c;
+}
+
+.login-page .login {
+  position: absolute;
+  width: 97px;
+  top: 19px;
+  left: 148px;
+  font-family: "Montserrat-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #69381d;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 20px;
+}
+
+.login-page .don-t-have-an {
+  position: absolute;
+  width: 222px;
+  top: 709px;
+  left: 769px;
+  font-family: "Montserrat-Medium", Helvetica;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.login-page .logo {
+  position: absolute;
+  width: 134px;
+  height: 29px;
+  top: 355px;
+  left: 793px;
+  overflow: hidden;
+}
+
+.login-page .overlap-3 {
+  position: absolute;
+  width: 134px;
+  height: 29px;
+  top: 4px;
+  left: 0;
+}
+
+.login-page .overlap-4 {
+  position: absolute;
+  width: 134px;
+  height: 29px;
+  top: 0;
+  left: 0;
+}
+
+.login-page .text-wrapper-2 {
+  position: absolute;
+  top: 0;
+  left: 5px;
+  font-family: "Montserrat-ExtraBold", Helvetica;
+  font-weight: 800;
+  color: #ffffff;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.login-page .line {
+  width: 24px;
+  height: 4px;
+  top: 1px;
+  position: absolute;
+  left: 0;
+}
+
+.login-page .img {
+  width: 4px;
+  height: 20px;
+  top: 4px;
+  position: absolute;
+  left: 0;
+}
+
+.login-page .line-2 {
+  width: 15px;
+  height: 2px;
+  top: 0;
+  position: absolute;
+  left: 0;
+}
+
+.login-page .text-wrapper-3 {
+  position: absolute;
+  width: 77px;
+  top: 708px;
+  left: 978px;
+  font-family: "Montserrat-Bold", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.register-page {
+  background-color: #69381d;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.register-page .overlap-wrapper {
+  background-color: #69381d;
+  overflow: hidden;
+  width: 1440px;
+  height: 1024px;
+}
+
+.register-page .overlap {
+  position: relative;
+  width: 1792px;
+  height: 1244px;
+  top: -14px;
+  left: -155px;
+}
+
+.register-page .BG {
+  position: absolute;
+  width: 1792px;
+  height: 1244px;
+  top: 0;
+  left: 0;
+}
+
+.register-page .overlap-group {
+  position: absolute;
+  width: 724px;
+  height: 724px;
+  top: 520px;
+  left: 0;
+  background-color: #ffa16d;
+  border-radius: 362px;
+}
+
+.register-page .ellipse {
+  position: absolute;
+  width: 572px;
+  height: 572px;
+  top: 76px;
+  left: 76px;
+  background-color: #daab91;
+  border-radius: 286px;
+}
+
+.register-page .div {
+  position: absolute;
+  width: 438px;
+  height: 438px;
+  top: 143px;
+  left: 143px;
+  background-color: #ddc7bb;
+  border-radius: 219px;
+}
+
+.register-page .vector {
+  position: absolute;
+  width: 668px;
+  height: 708px;
+  top: 14px;
+  left: 928px;
+}
+
+.register-page .username {
+  position: absolute;
+  width: 394px;
+  height: 59px;
+  top: 383px;
+  left: 679px;
+}
+
+.register-page .overlap-2 {
+  position: relative;
+  width: 392px;
+  height: 59px;
+  border-radius: 4px;
+  border: 1px solid;
+  border-color: #ffffff;
+}
+
+.register-page .email {
+  position: absolute;
+  width: 70px;
+  top: 19px;
+  left: 83px;
+  font-family: "Montserrat-Light", Helvetica;
+  font-weight: 300;
+  color: #ffffff;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 20px;
+  text-decoration: underline;
+}
+
+.register-page .user {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  top: 16px;
+  left: 15px;
+}
+
+.register-page .password {
+  position: absolute;
+  width: 394px;
+  height: 59px;
+  top: 468px;
+  left: 679px;
+}
+
+.register-page .text-wrapper {
+  position: absolute;
+  width: 124px;
+  top: 16px;
+  left: 83px;
+  font-family: "Montserrat-Light", Helvetica;
+  font-weight: 300;
+  color: #ffffff;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 20px;
+  text-decoration: underline;
+}
+
+.register-page .lock {
+  position: absolute;
+  width: 29px;
+  height: 37px;
+  top: 9px;
+  left: 13px;
+}
+
+.register-page .overlap-group-wrapper {
+  position: absolute;
+  width: 394px;
+  height: 59px;
+  top: 553px;
+  left: 679px;
+}
+
+.register-page .confirm-password {
+  position: absolute;
+  width: 226px;
+  top: 16px;
+  left: 83px;
+  font-family: "Montserrat-Light", Helvetica;
+  font-weight: 300;
+  color: #ffffff;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 20px;
+  text-decoration: underline;
+}
+
+.register-page .login-btn {
+  all: unset;
+  box-sizing: border-box;
+  position: absolute;
+  width: 394px;
+  height: 59px;
+  top: 638px;
+  left: 679px;
+}
+
+.register-page .register-wrapper {
+  position: relative;
+  width: 392px;
+  height: 59px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px #0000004c;
+}
+
+.register-page .register {
+  position: absolute;
+  width: 127px;
+  top: 18px;
+  left: 133px;
+  font-family: "Montserrat-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #69381d;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 20px;
+}
+
+.register-page .p {
+  position: absolute;
+  width: 272px;
+  top: 731px;
+  left: 767px;
+  font-family: "Montserrat-Medium", Helvetica;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.register-page .text-wrapper-2 {
+  position: absolute;
+  width: 68px;
+  top: 730px;
+  left: 1010px;
+  font-family: "Montserrat-Bold", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  text-decoration: underline;
+}
+
+.register-page .logo {
+  position: absolute;
+  width: 134px;
+  height: 29px;
+  top: 303px;
+  left: 809px;
+  overflow: hidden;
+}
+
+.register-page .overlap-3 {
+  position: absolute;
+  width: 134px;
+  height: 29px;
+  top: 4px;
+  left: 0;
+}
+
+.register-page .overlap-4 {
+  position: absolute;
+  width: 134px;
+  height: 29px;
+  top: 0;
+  left: 0;
+}
+
+.register-page .text-wrapper-3 {
+  position: absolute;
+  top: 0;
+  left: 5px;
+  font-family: "Montserrat-ExtraBold", Helvetica;
+  font-weight: 800;
+  color: #ffffff;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.register-page .line {
+  width: 24px;
+  height: 4px;
+  top: 1px;
+  position: absolute;
+  left: 0;
+}
+
+.register-page .img {
+  width: 4px;
+  height: 20px;
+  top: 4px;
+  position: absolute;
+  left: 0;
+}
+
+.register-page .line-2 {
+  width: 15px;
+  height: 2px;
+  top: 0;
+  position: absolute;
+  left: 0;
+}

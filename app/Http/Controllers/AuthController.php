@@ -3,67 +3,56 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Hash;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Auth;
 
 class AuthController extends Controller
 {
-    // Tampilkan form login
-    public function showLogin() {
-        return view('auth.login');
-    }
-
-    // Tampilkan form register
-    public function showRegister() {
+    public function showRegisterForm()
+    {
         return view('auth.register');
     }
 
-    // Proses registrasi
-    public function register(Request $request) {
+    public function register(Request $request)
+    {
         $request->validate([
-            'name' => 'required',
             'email' => 'required|email|unique:users',
-            'password' => 'required|confirmed|min:6',
+            'password' => 'required|min:6|confirmed',
         ]);
 
-        $user = User::create([
-            'name' => $request->name,
+        User::create([
             'email' => $request->email,
             'password' => Hash::make($request->password),
-            'role' => 'user', // default
         ]);
 
-        Auth::login($user);
-
-        return redirect('/dashboard');
+        return redirect()->route('login')->with('success', 'Registration successful! Please log in.');
     }
 
-    // Proses login
-    public function login(Request $request) {
+    public function showLoginForm()
+    {
+        return view('auth.login');
+    }
+
+    public function login(Request $request)
+    {
         $credentials = $request->validate([
             'email' => 'required|email',
-            'password' => 'required'
+            'password' => 'required',
         ]);
 
         if (Auth::attempt($credentials)) {
-            $request->session()->regenerate();
-
-            return redirect('/dashboard');
+            return redirect()->intended('/dashboard');
         }
 
         return back()->withErrors([
-            'email' => 'Email atau password salah.',
+            'email' => 'The provided credentials do not match our records.',
         ]);
     }
 
-    // Logout
-    public function logout(Request $request) {
+    public function logout()
+    {
         Auth::logout();
-        $request->session()->invalidate();
-        $request->session()->regenerateToken();
-
         return redirect('/login');
     }
 }
-
